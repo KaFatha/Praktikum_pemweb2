@@ -19,7 +19,7 @@
                 <th>Hasil</th>
             </tr>
             <tr>
-                <td>1</td>
+                <td>01</td>
                 <td><?= $nilai_mahasiswa1->nim; ?></td>
                 <td><?= $nilai_mahasiswa1->nilai; ?></td>
                 <td><?= $nilai_mahasiswa1->matkul; ?></td>
@@ -27,7 +27,7 @@
                 <td><?= $nilai_mahasiswa1->hasil() ?></td>
             </tr>
             <tr>
-                <td>2</td>
+                <td>02</td>
                 <td><?= $nilai_mahasiswa2->nim; ?></td>
                 <td><?= $nilai_mahasiswa2->nilai; ?></td>
                 <td><?= $nilai_mahasiswa2->matkul; ?></td>
@@ -35,7 +35,7 @@
                 <td><?= $nilai_mahasiswa2->hasil() ?></td>
             </tr>
             <tr>
-                <td>3</td>
+                <td>03</td>
                 <td><?= $nilai_mahasiswa3->nim; ?></td>
                 <td><?= $nilai_mahasiswa3->nilai; ?></td>
                 <td><?= $nilai_mahasiswa3->matkul; ?></td>
@@ -43,7 +43,7 @@
                 <td><?= $nilai_mahasiswa3->hasil() ?></td>
             </tr>
             <tr>
-                <td>4</td>
+                <td>04</td>
                 <td><?= $nilai_mahasiswa4->nim; ?></td>
                 <td><?= $nilai_mahasiswa4->nilai; ?></td>
                 <td><?= $nilai_mahasiswa4->matkul; ?></td>
@@ -51,7 +51,7 @@
                 <td><?= $nilai_mahasiswa4->hasil() ?></td>
             </tr>
             <tr>
-                <td>5</td>
+                <td>05</td>
                 <td><?= $nilai_mahasiswa5->nim; ?></td>
                 <td><?= $nilai_mahasiswa5->nilai; ?></td>
                 <td><?= $nilai_mahasiswa5->matkul; ?></td>
