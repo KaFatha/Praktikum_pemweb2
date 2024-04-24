@@ -1,7 +1,7 @@
 <?php
 
 $host = 'localhost';
-$user = 'root';
+$user =  'root';
 $password = '';
 $db = 'db_puskesmas';
 $charset = 'utf8mb4';
@@ -15,3 +15,4 @@ $opt = [
 ];
 
 $dbh = new PDO($dsn, $user, $password, $opt);
+?>
