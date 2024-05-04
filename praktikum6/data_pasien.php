@@ -15,8 +15,8 @@ $pasiens = $dbh->query($query)
 </head>
 <body>
     <div class="container">
-        <h2>Data Passien puskesmas Sukahati</h2>
-        <a href="create.php" class ='btn btn-primary mt-4'>Tambah Data Passien</a>
+        <h2>Data Pasien puskesmas Sukahati</h2>
+        <a href="create.php" class ='btn btn-primary mt-4'>Tambah Data Pasien</a>
         <table class="table table-bordered mt-2">
             <tr class="table-warning">
                 <th>No</th>
@@ -41,7 +41,7 @@ $pasiens = $dbh->query($query)
                     <td><?= $pasien['nama_kelurahan']; ?></td>
                     <td>
                     <a href="edit.php?id=<?=$pasien['id_pasien'];?>" class="btn btn-primary">Edit</a>
-                        <a href="proses.php?id=<?=$pasien['id_pasien'];?>" class="btn btn-danger">Hapus</a>
+                    <a href="proses.php?id=<?=$pasien['id_pasien'];?>" class="btn btn-danger">Hapus</a>
                     </td>
                     
                 </tr>
