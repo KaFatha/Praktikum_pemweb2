@@ -84,7 +84,6 @@ if (isset($_POST["submit"])) {
                                     <label for="gender" class="col-4 col-form-label">Jenis Kelamin</label>
                                     <div class="col-8">
                                         <select id="gender" name="gender" class="custom-select">
-                                            <option value="">Pilihan</option>
                                             <option value="L">Laki-Laki</option>
                                             <option value="P">Perempuan</option>
                                         </select>
@@ -113,7 +112,6 @@ if (isset($_POST["submit"])) {
                                             <?php
                                             foreach ($rsjenis as $rowjenis) {
                                             ?>
-                                                <option value="">Pilihan</option>
                                                 <option value="<?= $rowjenis['id'] ?>"><?= $rowjenis['nama'] ?></option>
                                             <?php
                                             }
