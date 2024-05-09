@@ -5,14 +5,16 @@ $kelurahans = $dbh->query($query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Create Data Pasien</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Create Data Pasien</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
+
 <body>
-<div class="container">
+  <div class="container">
     <h2>Daftar Pasien</h2>
     <form method="POST" class='ms-4 me-4' action="proses.php">
       <div class="form-group row">
@@ -72,7 +74,9 @@ $kelurahans = $dbh->query($query);
           <select id="kelurahan" name="kelurahan" class="custom-select" required="required">
             <option value="">Pilih Kelurahan</option>
             <?php foreach($kelurahans as $kelurahan){?>
-              <option value="<?= $kelurahan['id_kelurahan'];?>"><?= $kelurahan['nama'];?></option>
+            <option value="<?= $kelurahan['id_kelurahan'];?>">
+              <?= $kelurahan['nama'];?>
+            </option>
             <?php }?>
           </select>
         </div>
@@ -86,7 +90,6 @@ $kelurahans = $dbh->query($query);
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script
-
-    
+   
 </body>
 </html>
