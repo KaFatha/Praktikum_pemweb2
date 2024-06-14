@@ -32,3 +32,23 @@ Route::get('/about', [AboutController::class, 'index']);
 //Praktikum Laravel 3
 Route::get('/dashboard/kelurahan', [KelurahanController::class, 'index']);
 Route::get('/dashboard/pasien', [PasienController::class, 'index']);
+
+//Praktikum Laravel 4
+Route::get('/dashboard/kelurahan/create', [KelurahanController::class, 'create']);
+Route::post('/dashboard/kelurahan/store', [KelurahanController::class, 'store']);
+Route::get('/dashboard/kelurahan/show/{id}', [KelurahanController::class, 'show']);
+
+//Praktikum Laravel 4
+Route::get('/dashboard/pasien/create', [PasienController::class, 'create']);
+Route::post('/dashboard/pasien/store', [PasienController::class, 'store']);
+Route::get('/dashboard/pasien/show/{id}', [PasienController::class, 'show']);
+
+//Praktikum Laravel 5
+Route::get('/dashboard/kelurahan/edit/{id}', [KelurahanController::class, 'edit']);
+Route::put('/dashboard/kelurahan/update/{id}', [KelurahanController::class, 'update']);
+Route::delete('/dashboard/kelurahan/destroy/{id}', [KelurahanController::class, 'destroy']);
+
+//Praktikum Laravel 5
+Route::get('/dashboard/pasien/edit/{id}', [PasienController::class, 'edit']);
+Route::put('/dashboard/pasien/update/{id}', [PasienController::class, 'update']);
+Route::delete('/dashboard/pasien/destroy/{id}', [PasienController::class, 'destroy']);
