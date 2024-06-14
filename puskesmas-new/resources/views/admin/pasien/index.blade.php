@@ -24,7 +24,7 @@
                 <th>email</th>
                 <th>Alamat</th>
                 <th>Nama Kelurahan</th>
-                <th>Action</th>
+                <th>Aksi</th>
             </tr>
             @foreach ($list_pasien as $pasien)
             <tr>
